@@ -1,0 +1,132 @@
+* { box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+header,
+.main-content,
+.main-title,
+.about-main-content,
+.about-title,
+.work-main-content,
+.work-title,
+footer {
+  padding: 2em;
+}
+
+header { background: #41D3BD; }
+.main-content { background: #DE6449;}
+.main-title { background: darkgrey; }
+.about-main-content { background: #DE1234}
+.about-title { background: #407000}
+.work-main-content { background: #DE9234}
+.work-title { background: #409000}
+footer { background: #694D75;}
+
+
+/* ======================
+   Demo stuff starts here
+   ========================*/
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer"
+}
+
+.main-content {
+  height: 78vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr 5fr;
+  grid-template-areas:
+    "title title"
+    "about-title about-title"
+    "about-main about-main"
+    "work-title work-title"
+    "work-main work-main"
+}
+
+.about-main-content, .main-title, .work-main-content {
+  height: 78vh;
+}
+
+.main-content,
+.about-main-content,
+.work-main-content {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+.main-content::-webkit-scrollbar,
+.about-main-content::-webkit-scrollbar,
+.work-main-content::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+@media only screen and (min-width: 860px) {
+  body {
+    grid-template-columns: minmax(400px, 650px) minmax(200px, 350px);
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer"
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "about-title about-main"
+      "work-title work-main"
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  body {
+    grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer"
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "about-title about-main"
+      "work-title work-main"
+  }
+}
+
+
+header { grid-column: header / header; }
+.main-content { grid-area: main; }
+.main-title { grid-area: title; }
+
+footer { grid-area: footer; }
+
+.about-main-content { grid-area: about-main; }
+.about-title { grid-area: about-title; }
+
+.work-main-content { grid-area: work-main; }
+.work-title { grid-area: work-title; }
