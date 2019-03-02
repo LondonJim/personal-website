@@ -6,35 +6,42 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   height: 100vh;
 }
 
 header,
-.main-content,
 .main-title,
 .about-main-content,
 .about-title,
 .work-main-content,
 .work-title,
+.contact-title,
+.contact-main-content,
 footer {
-  padding: 2em;
+  padding: 10px;
 }
 
-header { background: #41D3BD; }
+footer {
+  height: 11vh;
+}
+
+header {
+  height: 11vh;
+}
+
+header { background: #41D3BD;}
 .main-content { background: #DE6449;}
-.main-title { background: darkgrey; }
-.about-main-content { background: #DE1234}
-.about-title { background: #407000}
-.work-main-content { background: #DE9234}
-.work-title { background: #409000}
+.main-title { background: darkgrey;}
+.about-main-content { background: #DE1234;}
+.about-title { background: #407000;}
+.work-main-content { background: #DE9234;}
+.work-title { background: #569023 }
+.contact-title { background: #309000;}
+.contact-main-content { background: #BE4234;}
 footer { background: #694D75;}
 
-
-/* ======================
-   Demo stuff starts here
-   ========================*/
-
-body {
+.container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 7fr 1fr;
@@ -47,23 +54,53 @@ body {
 .main-content {
   height: 78vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 5fr 1fr 5fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "title title"
-    "about-title about-title"
-    "about-main about-main"
-    "work-title work-title"
-    "work-main work-main"
+    "title"
+    "about"
+    "work"
+    "contact"
 }
 
-.about-main-content, .main-title, .work-main-content {
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "about-title"
+    "about-main"
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "work-title"
+    "work-main"
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "contact-title"
+    "contact-main"
+}
+
+.main-title,
+.about-main-content,
+.work-main-content,
+.contact-main-content {
   height: 78vh;
 }
 
 .main-content,
 .about-main-content,
-.work-main-content {
+.work-main-content,
+.contact-main-content {
   overflow-y: scroll;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -72,33 +109,23 @@ body {
 
 .main-content::-webkit-scrollbar,
 .about-main-content::-webkit-scrollbar,
-.work-main-content::-webkit-scrollbar {
+.work-main-content::-webkit-scrollbar,
+.contact-main-content::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
-@media only screen and (min-width: 860px) {
-  body {
-    grid-template-columns: minmax(400px, 650px) minmax(200px, 350px);
-    grid-template-rows: 1fr 7fr 1fr;
-    grid-template-areas:
-      "header header"
-      "main main"
-      "footer footer"
-  }
-
-  .main-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "title title"
-      "about-title about-main"
-      "work-title work-main"
-  }
+.about-title,
+.work-title,
+.contact-title {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+
 @media only screen and (min-width: 860px) {
-  body {
+  .body {
     grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);
     grid-template-rows: 1fr 7fr 1fr;
     grid-template-areas:
@@ -108,25 +135,67 @@ body {
   }
 
   .main-content {
+    scroll-snap-type: y mandatory;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "title"
+      "about"
+      "work"
+      "contact"
+  }
+
+  .main-title {
+    scroll-snap-align: start;
+  }
+
+  .about {
+    scroll-snap-align: start;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-      "title title"
       "about-title about-main"
+  }
+
+  .work {
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
       "work-title work-main"
   }
+
+  .contact {
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "contact-title contact-main"
+  }
+
 }
 
 
 header { grid-column: header / header; }
+
 .main-content { grid-area: main; }
+
 .main-title { grid-area: title; }
 
-footer { grid-area: footer; }
-
+.about { grid-area: about }
 .about-main-content { grid-area: about-main; }
 .about-title { grid-area: about-title; }
 
+.work { grid-area: work }
 .work-main-content { grid-area: work-main; }
 .work-title { grid-area: work-title; }
+
+.contact { grid-area: contact }
+.contact-main-content { grid-area: contact-main; }
+.contact-title { grid-area: contact-title; }
+
+footer { grid-area: footer; }
