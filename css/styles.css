@@ -52,6 +52,7 @@ footer { background: #694D75;}
 }
 
 .main-content {
+  scroll-snap-type: y proximity;
   height: 78vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -63,38 +64,42 @@ footer { background: #694D75;}
     "contact"
 }
 
+.main-title {
+  height: 78vh;
+  scroll-snap-align: start;
+}
+
 .about {
+  height: 78vh;
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 7fr;
   grid-template-areas:
     "about-title"
     "about-main"
 }
 
 .work {
+  height: 78vh;
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 7fr;
   grid-template-areas:
     "work-title"
     "work-main"
 }
 
 .contact {
+  height: 78vh;
+  scroll-snap-align: start;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 7fr;
   grid-template-areas:
     "contact-title"
     "contact-main"
-}
-
-.main-title,
-.about-main-content,
-.work-main-content,
-.contact-main-content {
-  height: 78vh;
 }
 
 .main-content,
@@ -135,7 +140,7 @@ footer { background: #694D75;}
   }
 
   .main-content {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -146,12 +151,8 @@ footer { background: #694D75;}
       "contact"
   }
 
-  .main-title {
-    scroll-snap-align: start;
-  }
-
   .about {
-    scroll-snap-align: start;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -160,7 +161,7 @@ footer { background: #694D75;}
   }
 
   .work {
-    scroll-snap-align: start;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -169,13 +170,24 @@ footer { background: #694D75;}
   }
 
   .contact {
-    scroll-snap-align: start;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
       "contact-title contact-main"
   }
+
+  .about-title,
+  .work-title,
+  .contact-title {
+    height: 78vh;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
 
 }
 
