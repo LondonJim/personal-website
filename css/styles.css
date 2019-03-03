@@ -30,16 +30,45 @@ header {
   height: 11vh;
 }
 
-header { background: #41D3BD;}
-.main-content { background: #DE6449;}
-.main-title { background: darkgrey;}
-.about-main-content { background: #DE1234;}
-.about-title { background: #407000;}
-.work-main-content { background: #DE9234;}
-.work-title { background: #569023 }
-.contact-title { background: #309000;}
-.contact-main-content { background: #BE4234;}
-footer { background: #694D75;}
+header { background: black;}
+.main-content { background: white;}
+.main-title { background: #262626;}
+.about-main-content { background: white;}
+.about-title { background: #FF5656;}
+.work-main-content { background: #262626;}
+.work-title { background: white; }
+.contact-title { background: #262626;}
+.contact-main-content { background: #FF5656;}
+footer { background: black;}
+
+header {
+  color: #FF5656;
+}
+
+.main-title {
+  position: relative;
+  color: white;
+}
+
+.about-title {
+  color: white;
+}
+
+.about-main-content {
+  color: black;
+}
+
+.work-title {
+  color: black;
+}
+
+.work-main-content {
+  color: white;
+}
+
+.contact-title {
+  color: white;
+}
 
 .container {
   display: grid;
