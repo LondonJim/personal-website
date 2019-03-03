@@ -217,6 +217,24 @@ header {
     z-index: 1000;
   }
 
+  .triangles {
+    bottom: 0;left: 0;position: absolute;width: 10%;
+    border-left: 0px solid transparent;
+    border-right: 150px solid transparent;
+  }
+
+  #title-triangle {
+    border-bottom: 150px solid #FF5656;
+  }
+
+  #about-triangle {
+    border-bottom: 150px solid white;
+  }
+
+  #work-triangle {
+    border-bottom: 150px solid #262626;
+  }
+
 
 }
 
