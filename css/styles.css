@@ -240,12 +240,23 @@ header {
   }
 
   #title-arrow,
-  #about-arrow,
+  #about-arrow {
+    display: block;
+    position: relative;
+    top: 145px;
+    right: -15px;
+  }
+
   #work-arrow {
     display: block;
     position: relative;
     top: 145px;
     right: -15px;
+  }
+
+  #work-triangle img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
   }
 
 
