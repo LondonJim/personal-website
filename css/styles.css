@@ -160,7 +160,7 @@ header {
 #title-arrow,
 #about-arrow,
 #work-arrow {
-  display: none;
+  visibility: hidden;
 }
 
 
@@ -244,7 +244,7 @@ header {
   #title-arrow,
   #about-arrow,
   #work-arrow {
-    display: block;
+    visibility: visible;
     position: relative;
     top: 220px;
     right: -15px;
@@ -254,7 +254,6 @@ header {
     -webkit-filter: invert(1);
     filter: invert(1);
   }
-
 
 }
 
