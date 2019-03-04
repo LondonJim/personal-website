@@ -13,14 +13,14 @@
       <div class="main-title" id="main-title">
         Main Title
         <div class="triangles" id="title-triangle">
-          <img src="./assets/arrow.svg" id="title-arrow"/>
+          <object id="title-arrow" data="./assets/arrow.svg" type="image/svg+xml" width="100" height="156"></object>
         </div>
       </div>
       <div class="about">
         <div class="about-title">
           about-title
           <div class="triangles" id="about-triangle">
-            <img src="./assets/arrow.svg" id="about-arrow"/>
+            <object id="about-arrow" data="./assets/arrow.svg" type="image/svg+xml" width="100" height="156"></object>
           </div>
         </div>
         <div class="about-main-content" id="about-main">
@@ -97,7 +97,7 @@
         <div class="work-title">
           work title
           <div class="triangles" id="work-triangle">
-            <img src="./assets/arrow.svg" id="work-arrow"/>
+            <object id="work-arrow" data="./assets/arrow.svg" type="image/svg+xml" width="100" height="156"></object>
           </div>
         </div>
         <div class="work-main-content" id="work-main">
@@ -238,9 +238,16 @@
         }
       }
 
-      document.getElementById("title-arrow").addEventListener("click", () => scrolling('about'))
-      document.getElementById("about-arrow").addEventListener("click", () => scrolling('work'))
-      document.getElementById("work-arrow").addEventListener("click", () => scrolling('contact'))
+      window.addEventListener("load", function() {
+        let svgTitle = document.getElementById('title-arrow').contentDocument;
+        let svgAbout = document.getElementById('about-arrow').contentDocument;
+        let svgWork = document.getElementById('work-arrow').contentDocument;
+
+        svgTitle.getElementById('arrow').addEventListener("click", () => scrolling('about'))
+        svgAbout.getElementById('arrow').addEventListener("click", () => scrolling('work'))
+        svgWork.getElementById('arrow').addEventListener("click", () => scrolling('contact'))
+
+      })
 
       addEventListener("wheel", displayPositions)
 
