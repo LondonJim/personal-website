@@ -45,6 +45,16 @@ header {
   color: #FF5656;
 }
 
+
+
+#my-name {
+  max-width: 100%;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: calc(50% - 132px);
+}
+
 .main-title {
   position: relative;
   color: white;
@@ -157,12 +167,11 @@ header {
   z-index: 1000;
 }
 
-#title-arrow,
-#about-arrow,
-#work-arrow {
-  visibility: hidden;
+.triangles {
+  overflow: hidden;
+  position: absolute;
+  width: 0px;
 }
-
 
 @media only screen and (min-width: 560px) {
   .body {
@@ -224,7 +233,10 @@ header {
   }
 
   .triangles {
-    bottom: 0;left: 0;position: absolute;width: 0%;
+    overflow: visible;
+    bottom: 0;left: 0;
+    position: absolute;
+    width: 0%;
     border-left: 0px solid transparent;
     border-right: 150px solid transparent;
   }
@@ -244,7 +256,6 @@ header {
   #title-arrow,
   #about-arrow,
   #work-arrow {
-    visibility: visible;
     position: relative;
     top: 220px;
     right: -15px;
