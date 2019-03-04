@@ -157,7 +157,9 @@ header {
   z-index: 1000;
 }
 
-#title-arrow {
+#title-arrow,
+#about-arrow,
+#work-arrow {
   display: none;
 }
 
@@ -240,13 +242,7 @@ header {
   }
 
   #title-arrow,
-  #about-arrow {
-    display: block;
-    position: relative;
-    top: 145px;
-    right: -15px;
-  }
-
+  #about-arrow,
   #work-arrow {
     display: block;
     position: relative;
