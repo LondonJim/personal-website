@@ -32,16 +32,17 @@ header {
 
 header { background: black;}
 .main-content { background: white;}
-.main-title { background: #262626;}
+.main-title { background: #00618A;}
 .about-main-content { background: white;}
 .about-title { background: #FF5656;}
-.work-main-content { background: #262626;}
+.work-main-content { background: #00618A;}
 .work-title { background: white; }
-.contact-title { background: #262626;}
+.contact-title { background: #00618A;}
 .contact-main-content { background: #FF5656;}
 footer { background: black;}
 
-header {
+header,
+footer {
   color: #FF5656;
 }
 
@@ -49,10 +50,12 @@ header {
 
 #my-name {
   max-width: 100%;
+  height: auto;
   position: relative;
   display: block;
   margin: auto;
-  top: calc(50% - 132px);
+  top: calc(50% - 120px);
+  z-index: 1000;
 }
 
 .main-title {
@@ -173,7 +176,111 @@ header {
   width: 0px;
 }
 
-@media only screen and (min-width: 560px) {
+#background-container {
+  position: absolute;
+  height: 78vh;
+  width: 100vw;
+
+}
+
+#background-image {
+  display: block;
+  margin: auto;
+
+  max-height: calc( 100% - 10px);
+
+  width: 100%;
+  width: auto;
+  max-width: 100%;
+}
+
+#baked-bean-1,
+#baked-bean-2,
+#baked-bean-3,
+#baked-bean-4,
+#baked-bean-5,
+#baked-bean-6 {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  display: block;
+}
+
+#baked-bean-1 {
+  margin-left: 70%;
+  margin-right: 30%;
+  top: calc(80% - 120px);
+}
+
+#baked-bean-2 {
+  margin-left: 40%;
+  margin-right: 60%;
+  top: calc(70% - 120px);
+}
+
+#baked-bean-3 {
+  margin-left: 50%;
+  margin-right: 50%;
+  top: calc(90% - 120px);
+}
+
+#baked-bean-4 {
+  margin-left: 30%;
+  margin-right: 70%;
+  top: calc(77% - 120px);
+}
+
+#baked-bean-5 {
+  margin-left: 60%;
+  margin-right: 40%;
+  top: calc(75% - 120px);
+}
+
+#baked-bean-6 {
+  margin-left: 40%;
+  margin-right: 60%;
+  top: calc(100% - 120px);
+}
+
+#background-image-small {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  display: block;
+}
+
+@media only screen and (max-width: 619px) {
+
+  #baked-bean-1,
+  #baked-bean-2,
+  #baked-bean-3,
+  #baked-bean-4,
+  #baked-bean-5,
+  #baked-bean-6 {
+    display: none;
+  }
+
+  #background-image {
+    position: absolute;
+    display: none;
+    max-width: 100%;
+    height: auto;
+    margin-left: 50%;
+    margin-right: 50%;
+    top: calc(50% - 120px);
+  }
+
+  #background-image-small {
+    position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  }
+
+}
+
+@media only screen and (min-width: 620px) {
   .body {
     grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);
     grid-template-rows: 1fr 7fr 1fr;
@@ -264,6 +371,10 @@ header {
   #work-triangle object {
     -webkit-filter: invert(1);
     filter: invert(1);
+  }
+
+  #background-image-small {
+    display: none;
   }
 
 }

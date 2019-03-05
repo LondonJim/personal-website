@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54px" height="54px" viewBox="0 0 150 150" id="el_Bg-fdIPHI"><style type="text/css">@-webkit-keyframes kf_el_VKXAk1TsYD_an_vJS0ochN90 {
+    0% {
+        -webkit-transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px)
+    }
+    50% {
+        -webkit-transform: translate(32.5px, 31px) scale(0.8, 0.8) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) scale(0.8, 0.8) translate(-32.5px, -31px)
+    }
+    100% {
+        -webkit-transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px)
+    }
+}
+@keyframes kf_el_VKXAk1TsYD_an_vJS0ochN90 {
+    0% {
+        -webkit-transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px)
+    }
+    50% {
+        -webkit-transform: translate(32.5px, 31px) scale(0.8, 0.8) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) scale(0.8, 0.8) translate(-32.5px, -31px)
+    }
+    100% {
+        -webkit-transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px)
+    }
+}
+@-webkit-keyframes kf_el_VKXAk1TsYD_an_Y85a8z6RK {
+    0% {
+        -webkit-transform: translate(32.5px, 31px) rotate(0deg) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) rotate(0deg) translate(-32.5px, -31px)
+    }
+    100% {
+        -webkit-transform: translate(32.5px, 31px) rotate(-360deg) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) rotate(-360deg) translate(-32.5px, -31px)
+    }
+}
+@keyframes kf_el_VKXAk1TsYD_an_Y85a8z6RK {
+    0% {
+        -webkit-transform: translate(32.5px, 31px) rotate(0deg) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) rotate(0deg) translate(-32.5px, -31px)
+    }
+    100% {
+        -webkit-transform: translate(32.5px, 31px) rotate(-360deg) translate(-32.5px, -31px);
+                transform: translate(32.5px, 31px) rotate(-360deg) translate(-32.5px, -31px)
+    }
+}
+#el_Bg-fdIPHI * {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}
+#el_VKXAk1TsYD_an_Y85a8z6RK {
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-transform: translate(32.5px, 31px) rotate(0deg) translate(-32.5px, -31px);
+            transform: translate(32.5px, 31px) rotate(0deg) translate(-32.5px, -31px);
+    -webkit-animation-name: kf_el_VKXAk1TsYD_an_Y85a8z6RK;
+            animation-name: kf_el_VKXAk1TsYD_an_Y85a8z6RK;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}
+#el_VKXAk1TsYD_an_vJS0ochN90 {
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px);
+            transform: translate(32.5px, 31px) scale(1, 1) translate(-32.5px, -31px);
+    -webkit-animation-name: kf_el_VKXAk1TsYD_an_vJS0ochN90;
+            animation-name: kf_el_VKXAk1TsYD_an_vJS0ochN90;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}</style><style/>
+  <g id="el_VKXAk1TsYD_an_Y85a8z6RK" data-animator-group="true" data-animator-type="1"><g id="el_VKXAk1TsYD_an_vJS0ochN90" data-animator-group="true" data-animator-type="2"><image x="-2" y="3" width="69" height="56" xlink:href="data:img/png;base64,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" id="el_VKXAk1TsYD"/></g></g>
+</svg>

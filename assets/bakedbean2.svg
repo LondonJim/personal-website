@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="-5 0 150 150" id="el_pAqRWuDYf"><style type="text/css">@-webkit-keyframes kf_el_z47PCb10ob_an_gz46IH-HF {
+    0% {
+        -webkit-transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px)
+    }
+    50% {
+        -webkit-transform: translate(26px, 37.5px) scale(0.8, 0.8) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) scale(0.8, 0.8) translate(-26px, -37.5px)
+    }
+    100% {
+        -webkit-transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px)
+    }
+}
+@keyframes kf_el_z47PCb10ob_an_gz46IH-HF {
+    0% {
+        -webkit-transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px)
+    }
+    50% {
+        -webkit-transform: translate(26px, 37.5px) scale(0.8, 0.8) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) scale(0.8, 0.8) translate(-26px, -37.5px)
+    }
+    100% {
+        -webkit-transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px)
+    }
+}
+@-webkit-keyframes kf_el_z47PCb10ob_an_H2IJr-xhL {
+    0% {
+        -webkit-transform: translate(26px, 37.5px) rotate(0deg) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) rotate(0deg) translate(-26px, -37.5px)
+    }
+    100% {
+        -webkit-transform: translate(26px, 37.5px) rotate(360deg) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) rotate(360deg) translate(-26px, -37.5px)
+    }
+}
+@keyframes kf_el_z47PCb10ob_an_H2IJr-xhL {
+    0% {
+        -webkit-transform: translate(26px, 37.5px) rotate(0deg) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) rotate(0deg) translate(-26px, -37.5px)
+    }
+    100% {
+        -webkit-transform: translate(26px, 37.5px) rotate(360deg) translate(-26px, -37.5px);
+                transform: translate(26px, 37.5px) rotate(360deg) translate(-26px, -37.5px)
+    }
+}
+#el_pAqRWuDYf * {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}
+#el_z47PCb10ob_an_H2IJr-xhL {
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-transform: translate(26px, 37.5px) rotate(0deg) translate(-26px, -37.5px);
+            transform: translate(26px, 37.5px) rotate(0deg) translate(-26px, -37.5px);
+    -webkit-animation-name: kf_el_z47PCb10ob_an_H2IJr-xhL;
+            animation-name: kf_el_z47PCb10ob_an_H2IJr-xhL;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}
+#el_z47PCb10ob_an_gz46IH-HF {
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px);
+            transform: translate(26px, 37.5px) scale(1, 1) translate(-26px, -37.5px);
+    -webkit-animation-name: kf_el_z47PCb10ob_an_gz46IH-HF;
+            animation-name: kf_el_z47PCb10ob_an_gz46IH-HF;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+            animation-timing-function: cubic-bezier(0, 0, 1, 1)
+}</style><style/>
+  <g id="el_z47PCb10ob_an_H2IJr-xhL" data-animator-group="true" data-animator-type="1"><g id="el_z47PCb10ob_an_gz46IH-HF" data-animator-group="true" data-animator-type="2"><image x="-1" width="54" height="75" xlink:href="data:img/png;base64,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" id="el_z47PCb10ob"/></g></g>
+</svg>
