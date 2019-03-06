@@ -65,6 +65,7 @@ footer {
 
 .about-main-content {
   color: black;
+  padding: 110px;
 }
 
 .work-title {
@@ -73,10 +74,16 @@ footer {
 
 .work-main-content {
   color: white;
+  padding: 110px;
 }
 
 .contact-title {
   color: white;
+}
+
+.contact-main-content {
+  color: white;
+  padding: 110px;
 }
 
 .container {
@@ -113,7 +120,7 @@ footer {
   scroll-snap-align: start;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 2fr 7fr;
   grid-template-areas:
     "about-title"
     "about-main"
@@ -125,7 +132,7 @@ footer {
   scroll-snap-align: start;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 2fr 7fr;
   grid-template-areas:
     "work-title"
     "work-main"
@@ -137,7 +144,7 @@ footer {
   scroll-snap-align: start;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 7fr;
+  grid-template-rows: 2fr 7fr;
   grid-template-areas:
     "contact-title"
     "contact-main"
@@ -255,9 +262,18 @@ footer {
   z-index: 1000;
 }
 
-@media only screen and (max-width: 644px) {
+@media only screen and (max-width: 900px) {
 
-.baked-bean {
+  .work-title { background: black; }
+  .contact-title { background: white;}
+
+  .about-main-content,
+  .work-main-content,
+  .contact-main-content {
+    padding: 0px 30px 0px 30px;
+  }
+
+  .baked-bean {
     display: none;
   }
 
@@ -285,9 +301,22 @@ footer {
     top: -2vh;
   }
 
+  #face {
+    position: absolute;
+    left: 85%;
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: auto;
+    max-height: 80%;
+    max-width: 80%;
+    z-index: 1000;
+  }
+
 }
 
-@media only screen and (min-width: 645px) {
+@media only screen and (min-width: 901px) {
   .body {
     grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);
     grid-template-rows: 1fr 7fr 1fr;
@@ -379,6 +408,17 @@ footer {
     display: none;
   }
 
+  #face {
+    position: absolute;
+    left: calc(100% + 100px) ;
+    top: 20vh;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    width: 200px;
+    height: 200px;
+    z-index: 1000;
+  }
 }
 
 
