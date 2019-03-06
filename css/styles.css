@@ -34,16 +34,16 @@ header { background: black;}
 .main-content { background: white;}
 .main-title { background: #00618A;}
 .about-main-content { background: white;}
-.about-title { background: #FF5656;}
+.about-title { background: #FE3F46;}
 .work-main-content { background: #00618A;}
 .work-title { background: white; }
 .contact-title { background: #00618A;}
-.contact-main-content { background: #FF5656;}
+.contact-main-content { background: #FE3F46;}
 footer { background: black;}
 
 header,
 footer {
-  color: #FF5656;
+  color: #FE3F46;
 }
 
 
@@ -180,26 +180,18 @@ footer {
   position: absolute;
   height: 78vh;
   width: 100vw;
-
 }
 
 #background-image {
   display: block;
   margin: auto;
-
   max-height: calc( 100% - 10px);
-
   width: 100%;
   width: auto;
   max-width: 100%;
 }
 
-#baked-bean-1,
-#baked-bean-2,
-#baked-bean-3,
-#baked-bean-4,
-#baked-bean-5,
-#baked-bean-6 {
+.baked-bean {
   max-width: 100%;
   height: auto;
   position: absolute;
@@ -251,12 +243,7 @@ footer {
 
 @media only screen and (max-width: 619px) {
 
-  #baked-bean-1,
-  #baked-bean-2,
-  #baked-bean-3,
-  #baked-bean-4,
-  #baked-bean-5,
-  #baked-bean-6 {
+.baked-bean {
     display: none;
   }
 
@@ -349,7 +336,7 @@ footer {
   }
 
   #title-triangle {
-    border-bottom: 150px solid #FF5656;
+    border-bottom: 150px solid #FE3F46;
   }
 
   #about-triangle {
