@@ -149,6 +149,7 @@ footer {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .main-content::-webkit-scrollbar,
@@ -278,13 +279,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     margin-left: 50%;
     margin-right: 50%;
 
-  }
-
-  #background-image-small {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    display: block;
   }
 
   #background-image-small {
