@@ -11,15 +11,7 @@ body {
   height: 100vh;
 }
 
-.main-title,
-.about-main-content,
-.about-title,
-.work-main-content,
-.work-title,
-.contact-title,
-.contact-main-content {
-  padding: 10px;
-}
+
 
 footer {
   height: 0vh;
