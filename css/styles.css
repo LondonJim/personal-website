@@ -253,7 +253,7 @@ footer {
   z-index: 1000;
 }
 
-@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (max-width: 1334px) {
 
   .work-title { background: black; }
   .contact-title { background: white;}
@@ -316,7 +316,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 901px) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (min-width: 1335px) {
   .body {
     grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);
     grid-template-rows: 1fr 7fr 1fr;
