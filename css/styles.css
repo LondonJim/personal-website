@@ -253,7 +253,7 @@ footer {
   z-index: 1000;
 }
 
-@media only screen and (max-width: 900px), screen and (min-height: 1300) {
+@media only screen and (max-width: 900px) {
 
   .work-title { background: black; }
   .contact-title { background: white;}
