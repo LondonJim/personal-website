@@ -304,14 +304,23 @@ footer {
 
   #face {
     position: absolute;
-    left: 85%;
+    right: 20px;
     bottom: 5%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+
     height: auto;
     max-height: 80%;
     max-width: 80%;
+    z-index: 1000;
+  }
+
+  #about-me {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+
+    height: auto;
+    max-height: 65%;
+    max-width: 65%;
     z-index: 1000;
   }
 
@@ -418,6 +427,18 @@ footer {
     transform: translateX(-100%);
     width: 200px;
     height: 200px;
+    z-index: 1000;
+  }
+
+  #about-me {
+    position: absolute;
+    left: calc(50% + 160px);
+    bottom: calc(50% - 50px);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    width: 320px;
+    height: 100px;
     z-index: 1000;
   }
 }
