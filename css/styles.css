@@ -2,7 +2,8 @@
 
 html {
   font-family: sans-serif;
-  LINE-HEIGHT: 30px;
+  font-size: 16px;
+  line-height: 2em;
 }
 
 body {
@@ -183,12 +184,12 @@ footer {
 
 #background-image {
   display: block;
+  bottom: 0vh;
   margin: auto;
   max-height: 90%;
   width: 100%;
   width: auto;
   max-width: 100%;
-
 }
 
 .baked-bean {
@@ -258,12 +259,15 @@ footer {
 and (max-width: 900px)
 and (-webkit-min-device-pixel-ratio: 2){
 
+
   .work-title { background: black; }
   .contact-title { background: white;}
 
   .about-main-content,
   .work-main-content,
   .contact-main-content {
+    font-size: 24px;
+    line-height: 1.5em;
     padding: 0px 30px 0px 30px;
   }
 
@@ -272,23 +276,17 @@ and (-webkit-min-device-pixel-ratio: 2){
   }
 
   #background-image {
-    position: relative;
     display: none;
-    max-width: 100%;
-    height: auto;
-    margin-left: 50%;
-    margin-right: 50%;
-
   }
 
   #background-image-small {
     position: relative;
+    display: block;
     left: 50%;
     top: 10vh;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    z-index: 0;
   }
 
   #top-border img {
@@ -299,7 +297,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     position: absolute;
     right: 20px;
     bottom: 5%;
-
     height: auto;
     max-height: 80%;
     max-width: 80%;
@@ -310,7 +307,6 @@ and (-webkit-min-device-pixel-ratio: 2){
     position: absolute;
     left: 10px;
     bottom: 20px;
-
     height: auto;
     max-height: 65%;
     max-width: 65%;
