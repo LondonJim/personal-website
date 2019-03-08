@@ -175,6 +175,18 @@ footer {
   width: 0px;
 }
 
+.baked-bean {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  display: block;
+}
+
+.border {
+  z-index: 1001;
+  top: -50px;
+}
+
 #background-container {
   position: absolute;
   top: 10%;
@@ -190,13 +202,6 @@ footer {
   width: 100%;
   width: auto;
   max-width: 100%;
-}
-
-.baked-bean {
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  display: block;
 }
 
 #baked-bean-1 {
@@ -242,9 +247,14 @@ footer {
   display: block;
 }
 
-.border {
-  z-index: 1001;
-  top: -50px;
+#my-name {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: calc(50% - 120px);
+  z-index: 900;
 }
 
 #top-border img {
@@ -260,8 +270,15 @@ and (max-width: 900px)
 and (-webkit-min-device-pixel-ratio: 2){
 
 
-  .work-title { background: black; }
-  .contact-title { background: white;}
+  .work-title {
+    background: black;
+    color: white;
+  }
+
+  .contact-title {
+    background: white;
+    color: black;
+  }
 
   .about-main-content,
   .work-main-content,
@@ -340,29 +357,26 @@ and (-webkit-min-device-pixel-ratio: 2) {
       "contact"
   }
 
-  .about {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "about-title about-main"
-  }
-
-  .work {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "work-title work-main"
-  }
-
+  .about,
+  .work,
   .contact {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+
+  .about {
+    grid-template-areas:
+      "about-title about-main"
+  }
+
+  .work {
+    grid-template-areas:
+      "work-title work-main"
+  }
+
+  .contact {
     grid-template-areas:
       "contact-title contact-main"
   }
