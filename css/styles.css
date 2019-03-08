@@ -269,7 +269,6 @@ footer {
 and (max-width: 900px)
 and (-webkit-min-device-pixel-ratio: 2){
 
-
   .work-title {
     background: black;
     color: white;
@@ -320,7 +319,9 @@ and (-webkit-min-device-pixel-ratio: 2){
     z-index: 1000;
   }
 
-  #about-me {
+  #about-me,
+  #projects,
+  #contact {
     position: absolute;
     left: 10px;
     bottom: 20px;
@@ -328,6 +329,11 @@ and (-webkit-min-device-pixel-ratio: 2){
     max-height: 65%;
     max-width: 65%;
     z-index: 1000;
+  }
+
+  #projects {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
   }
 
 }
@@ -436,7 +442,9 @@ and (-webkit-min-device-pixel-ratio: 2) {
     z-index: 1000;
   }
 
-  #about-me {
+  #about-me,
+  #projects,
+  #contact {
     position: absolute;
     left: calc(50% + 160px);
     bottom: calc(50% - 50px);
@@ -448,7 +456,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
     z-index: 1000;
   }
 }
-
 
 header { grid-column: header / header; }
 
