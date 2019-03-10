@@ -36,16 +36,6 @@ footer {
   color: #FE3F46;
 }
 
-#my-name {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  display: block;
-  margin: auto;
-  top: calc(50% - 120px);
-  z-index: 900;
-}
-
 .main-title {
   position: relative;
   color: white;
@@ -157,13 +147,13 @@ footer {
 .about-main-content::-webkit-scrollbar,
 .work-main-content::-webkit-scrollbar,
 .contact-main-content::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none;
 }
 
 .about-title,
 .work-title,
 .contact-title {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -185,6 +175,20 @@ footer {
 .border {
   z-index: 1001;
   top: -50px;
+}
+
+.contact-links {
+  border: 8px solid black;
+  border-radius: 12px;
+  background: white;
+  margin: 5px;
+}
+
+.contact-links img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
 #background-container {
@@ -391,7 +395,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .work-title,
   .contact-title {
     height: 100vh;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -457,7 +461,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
   }
 }
 
-header { grid-column: header / header; }
+header { grid-column: header; }
 
 .main-content { grid-area: main; }
 
