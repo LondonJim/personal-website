@@ -184,6 +184,11 @@ footer {
   border-radius: 12px;
   background: white;
   margin: 5px;
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .contact-links img {
