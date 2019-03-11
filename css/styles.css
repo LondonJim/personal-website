@@ -27,8 +27,8 @@ header { background: black;}
 .main-title { background: #00A39D;}
 .about-main-content { background: white;}
 .about-title { background: #FE3F46;}
-.work-main-content { background: #00A39D;}
-.work-title { background: white; }
+.projects-main-content { background: #00A39D;}
+.projects-title { background: white; }
 .contact-title { background: #00A39D;}
 .contact-main-content { background: #FE3F46;}
 footer { background: black;}
@@ -52,11 +52,11 @@ footer {
   padding: 110px;
 }
 
-.work-title {
+.projects-title {
   color: black;
 }
 
-.work-main-content {
+.projects-main-content {
   color: white;
   padding: 110px;
 }
@@ -89,7 +89,7 @@ footer {
   grid-template-areas:
     "title"
     "about"
-    "work"
+    "projects"
     "contact"
 }
 
@@ -110,7 +110,7 @@ footer {
     "about-main"
 }
 
-.work {
+.projects {
   height: 100vh;
   z-index: 1;
   scroll-snap-align: start;
@@ -118,8 +118,8 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 7fr;
   grid-template-areas:
-    "work-title"
-    "work-main"
+    "projects-title"
+    "projects-main"
 }
 
 .contact {
@@ -136,7 +136,7 @@ footer {
 
 .main-content,
 .about-main-content,
-.work-main-content,
+.projects-main-content,
 .contact-main-content {
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -147,13 +147,13 @@ footer {
 
 .main-content::-webkit-scrollbar,
 .about-main-content::-webkit-scrollbar,
-.work-main-content::-webkit-scrollbar,
+.projects-main-content::-webkit-scrollbar,
 .contact-main-content::-webkit-scrollbar {
   display: none;
 }
 
 .about-title,
-.work-title,
+.projects-title,
 .contact-title {
   position: -webkit-sticky;
   position: sticky;
@@ -279,7 +279,7 @@ footer {
 @media only screen
 and (max-width: 900px) {
 
-  .work-title {
+  .projects-title {
     background: black;
     color: white;
   }
@@ -290,7 +290,7 @@ and (max-width: 900px) {
   }
 
   .about-main-content,
-  .work-main-content,
+  .projects-main-content,
   .contact-main-content {
     font-size: 24px;
     line-height: 1.5em;
@@ -368,12 +368,12 @@ and (min-width: 901px) {
     grid-template-areas:
       "title"
       "about"
-      "work"
+      "projects"
       "contact"
   }
 
   .about,
-  .work,
+  .projects,
   .contact {
     height: 100%;
     display: grid;
@@ -386,9 +386,9 @@ and (min-width: 901px) {
       "about-title about-main"
   }
 
-  .work {
+  .projects {
     grid-template-areas:
-      "work-title work-main"
+      "projects-title projects-main"
   }
 
   .contact {
@@ -397,7 +397,7 @@ and (min-width: 901px) {
   }
 
   .about-title,
-  .work-title,
+  .projects-title,
   .contact-title {
     height: 100vh;
     position: -webkit-sticky;
@@ -423,13 +423,13 @@ and (min-width: 901px) {
     border-bottom: 150px solid white;
   }
 
-  #work-triangle {
+  #projects-triangle {
     border-bottom: 150px solid #00A39D;
   }
 
   #title-arrow,
   #about-arrow,
-  #work-arrow {
+  #projects-arrow {
     position: relative;
     top: 220px;
     right: -15px;
@@ -476,9 +476,9 @@ header { grid-column: header; }
 .about-main-content { grid-area: about-main; }
 .about-title { grid-area: about-title; }
 
-.work { grid-area: work }
-.work-main-content { grid-area: work-main; }
-.work-title { grid-area: work-title; }
+.projects { grid-area: projects }
+.projects-main-content { grid-area: projects-main; }
+.projects-title { grid-area: projects-title; }
 
 .contact { grid-area: contact }
 .contact-main-content { grid-area: contact-main; }

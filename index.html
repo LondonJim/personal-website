@@ -44,14 +44,14 @@
           <p style="text-align: center"><a href="./assets/JamesSutherlandCV.docx" download>Download CV</a></p>
         </div>
       </div>
-      <div class="work">
-        <div class="work-title">
+      <div class="projects">
+        <div class="projects-title">
           <img id="projects" src="./assets/projects.png">
-          <div class="triangles" id="work-triangle">
-            <object id="work-arrow" data="./assets/arrow.svg" type="image/svg+xml" width="100" height="156"></object>
+          <div class="triangles" id="projects-triangle">
+            <object id="projects-arrow" data="./assets/arrow.svg" type="image/svg+xml" width="100" height="156"></object>
           </div>
         </div>
-        <div class="work-main-content" id="work-main">
+        <div class="projects-main-content" id="projects-main">
           Nostrud quid ingeniis an qui litteris exquisitaque. Magna a qui aute nostrud de
           ita eram qui quid est a quae multos ex laboris ita illum se eiusmod. Dolor o si
           malis expetendis ex admodum ut admodum, qui dolore arbitrantur non ne dolor a
@@ -122,18 +122,17 @@
       document.body.style.transform = 'scale(1)';
       document.body.style.zoom = screen.logicalXDPI / screen.deviceXDPI;
 
-
       let main = document.getElementById('main-content')
       let title = document.getElementById('main-title')
       let about = document.getElementById('about-main')
-      let work = document.getElementById('work-main')
+      let projects = document.getElementById('projects-main')
       let contact = document.getElementById('contact-main')
 
       // displayPositions = () => {
       //   console.log("main", main.scrollTop, main.offsetHeight, main.scrollHeight)
       //   console.log("title", title.scrollTop, title.offsetHeight, title.scrollHeight)
       //   console.log("about", about.scrollTop, about.offsetHeight, about.scrollHeight)
-      //   console.log("work", work.scrollTop, work.offsetHeight, work.scrollHeight)
+      //   console.log("projects", projects.scrollTop, projects.offsetHeight, projects.scrollHeight)
       //   console.log("contact", contact.scrollTop, contact.offsetHeight, contact.scrollHeight)
       //   console.log(" ")
       // }
@@ -146,7 +145,7 @@
               behavior: 'smooth'
             })
             break
-          case 'work':
+          case 'projects':
             main.scrollTo({
               top: (title.offsetHeight + about.offsetHeight),
               behavior: 'smooth'
@@ -154,22 +153,25 @@
             break
           case 'contact':
             main.scrollTo({
-              top: (title.offsetHeight + about.offsetHeight + work.offsetHeight),
+              top: (title.offsetHeight + about.offsetHeight + projects.offsetHeight),
               behavior: 'smooth'
             })
             break
         }
       }
 
+      addEvent = (title, scrollingTo) => {
+        title.getElementById('arrow').addEventListener("click", () => scrolling(scrollingTo))
+      }
+
       window.addEventListener("load", function() {
         let svgTitle = document.getElementById('title-arrow').contentDocument;
         let svgAbout = document.getElementById('about-arrow').contentDocument;
-        let svgWork = document.getElementById('work-arrow').contentDocument;
+        let svgWork = document.getElementById('projects-arrow').contentDocument;
 
-        svgTitle.getElementById('arrow').addEventListener("click", () => scrolling('about'))
-        svgAbout.getElementById('arrow').addEventListener("click", () => scrolling('work'))
-        svgWork.getElementById('arrow').addEventListener("click", () => scrolling('contact'))
-
+        addEvent(svgTitle, 'about')
+        addEvent(svgAbout, 'projects')
+        addEvent(svgWork, 'contact')
       })
 
     </script>
