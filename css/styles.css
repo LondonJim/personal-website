@@ -268,16 +268,6 @@ footer {
   z-index: 900;
 }
 
-#stamp {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  display: block;
-  left: 51%;
-  top: calc(50% - 240px);
-  z-index: 1000;
-}
-
 #top-border img {
   bottom: 4.5vh;
   position: relative;
@@ -361,6 +351,10 @@ and (max-width: 1000px) {
   #projects {
     -webkit-filter: invert(100%);
     filter: invert(100%);
+  }
+
+  #stamp {
+    display: none;
   }
 
 }
@@ -490,6 +484,16 @@ and (min-width: 1001px) {
     transform: translateX(-100%);
     width: 320px;
     height: 100px;
+    z-index: 1000;
+  }
+
+  #stamp {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    left: 51%;
+    top: calc(50% - 240px);
     z-index: 1000;
   }
 }
