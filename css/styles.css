@@ -277,7 +277,7 @@ footer {
 }
 
 @media only screen
-and (max-width: 900px) {
+and (max-width: 1000px) {
 
   .projects-title {
     background: black;
@@ -356,7 +356,7 @@ and (max-width: 900px) {
 }
 
 @media only screen
-and (min-width: 901px) {
+and (min-width: 1001px) {
 
   .body {
     grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);
