@@ -41,8 +41,12 @@ scrolling = (position) => {
   }
 }
 
-addEvent = (title, scrollingTo) => {
-  title.getElementById('arrow').addEventListener("click", () => scrolling(scrollingTo))
+addClickEvent = (title, id, scrollingTo) => {
+  title.getElementById(id).addEventListener("click", () => scrolling(scrollingTo))
+}
+
+addArrowPointer = (svgFile) => {
+  svgFile.getElementById('el_oAMJda4ZC6_an_6JxcnEJeL').style.cursor="pointer"
 }
 
 window.addEventListener("load", function() {
@@ -50,7 +54,19 @@ window.addEventListener("load", function() {
   let svgAbout = document.getElementById('about-arrow').contentDocument;
   let svgWork = document.getElementById('projects-arrow').contentDocument;
 
-  addEvent(svgTitle, 'about')
-  addEvent(svgAbout, 'projects')
-  addEvent(svgWork, 'contact')
+  addArrowPointer(svgTitle)
+  addArrowPointer(svgAbout)
+  addArrowPointer(svgWork)
+
+  addClickEvent(svgTitle, 'arrow', 'about')
+  addClickEvent(svgAbout, 'arrow', 'projects')
+  addClickEvent(svgWork, 'arrow', 'contact')
+
+  addClickEvent(document, 'about-text-link-1', 'about')
+  addClickEvent(document, 'projects-text-link-1', 'projects')
+  addClickEvent(document, 'contact-text-link-1', 'contact')
+
+  addClickEvent(document, 'about-text-link-2', 'about')
+  addClickEvent(document, 'projects-text-link-2', 'projects')
+  addClickEvent(document, 'contact-text-link-2', 'contact')
 })

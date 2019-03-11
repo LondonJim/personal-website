@@ -301,6 +301,13 @@ and (max-width: 900px) {
     display: none;
   }
 
+  .about-title p,
+  .projects-title p,
+  .contact-title p {
+    display: none;
+  }
+
+
   #background-image {
     display: none;
   }
@@ -413,6 +420,17 @@ and (min-width: 901px) {
     width: 0%;
     border-left: 0px solid transparent;
     border-right: 150px solid transparent;
+  }
+
+  .about-title p,
+  .projects-title p,
+  .contact-title p {
+    color: black;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 60%;
+    cursor: pointer;
   }
 
   #title-triangle {
