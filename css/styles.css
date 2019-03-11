@@ -1,3 +1,5 @@
+@import url("normalize.css");
+
 * { box-sizing: border-box; }
 
 html {
@@ -270,8 +272,7 @@ footer {
 }
 
 @media only screen
-and (max-width: 900px)
-and (-webkit-min-device-pixel-ratio: 2){
+and (max-width: 900px) {
 
   .work-title {
     background: black;
@@ -343,8 +344,7 @@ and (-webkit-min-device-pixel-ratio: 2){
 }
 
 @media only screen
-and (min-width: 901px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (min-width: 901px) {
 
   .body {
     grid-template-columns: minmax(350px, 960px) minmax(350px, 960px);

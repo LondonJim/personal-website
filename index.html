@@ -117,6 +117,12 @@
     <footer>
     </footer>
     <script>
+    document.body.style.webkitTransform =  'scale(1)';
+    document.body.style.msTransform =   'scale(100)';
+    document.body.style.transform = 'scale(1)';
+    document.body.style.zoom = screen.logicalXDPI / screen.deviceXDPI;
+
+
       let main = document.getElementById('main-content')
       let title = document.getElementById('main-title')
       let about = document.getElementById('about-main')
