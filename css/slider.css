@@ -29,25 +29,26 @@
 }
 
 .slider-btn {
-    position:absolute;
-    top: calc(50% - 25px);
-    height: 50px;
-    width: 30px;
-    opacity: 0.6;
+  position:absolute;
+  top: calc(50% - 25px);
+  height: 50px;
+  width: 30px;
+  opacity: 0.6;
 }
 
 .slider-btn:hover{
-    opacity: 0.9;
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 #prev {
-    background: #000;
-    left: 0px;
+  background: #000;
+  left: 0px;
 }
 
 #next {
-    background: #000;
-    right: 0px;
+  background: #000;
+  right: 0px;
 }
 
 #prev img, #next img {
