@@ -1,4 +1,5 @@
 @import url("normalize.css");
+@import url("slider.css");
 
 * { box-sizing: border-box; }
 
@@ -276,6 +277,26 @@ footer {
   z-index: 1000;
 }
 
+header { grid-column: header; }
+
+.main-content { grid-area: main; }
+
+.main-title { grid-area: title; }
+
+.about { grid-area: about }
+.about-main-content { grid-area: about-main; }
+.about-title { grid-area: about-title; }
+
+.projects { grid-area: projects }
+.projects-main-content { grid-area: projects-main; }
+.projects-title { grid-area: projects-title; }
+
+.contact { grid-area: contact }
+.contact-main-content { grid-area: contact-main; }
+.contact-title { grid-area: contact-title; }
+
+footer { grid-area: footer; }
+
 @media only screen
 and (max-width: 1000px) {
 
@@ -494,26 +515,6 @@ and (min-width: 1001px) {
     display: block;
     left: 51%;
     top: calc(50% - 240px);
-    z-index: 1000;
+    z-index: 900;
   }
 }
-
-header { grid-column: header; }
-
-.main-content { grid-area: main; }
-
-.main-title { grid-area: title; }
-
-.about { grid-area: about }
-.about-main-content { grid-area: about-main; }
-.about-title { grid-area: about-title; }
-
-.projects { grid-area: projects }
-.projects-main-content { grid-area: projects-main; }
-.projects-title { grid-area: projects-title; }
-
-.contact { grid-area: contact }
-.contact-main-content { grid-area: contact-main; }
-.contact-title { grid-area: contact-title; }
-
-footer { grid-area: footer; }
