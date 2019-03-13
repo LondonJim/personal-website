@@ -1,7 +1,8 @@
 let imageNumber = 0
-let images = [1,2,3,4]
+let images = [1,2,3,4,5]
 let imageTitle = ["Trick or Eat Brains", "Chitter Twitter",
-                  "Personal Website", "Binary Steganography"]
+                  "Personal Website", "Binary Steganography",
+                  "User API"]
 
 window.addEventListener("load", function() {
   let prev = document.getElementById('prev')
@@ -26,8 +27,8 @@ changeSliderDetails = () => {
 checkImageNumber = (direction) => {
   if (direction === 'next') imageNumber++
   if (direction === 'prev') imageNumber--
-  if (imageNumber>3) imageNumber = 0
-  if (imageNumber<0) imageNumber = 3
+  if (imageNumber>4) imageNumber = 0
+  if (imageNumber<0) imageNumber = 4
   changeSliderDetails()
 }
 
