@@ -9,15 +9,6 @@ let about = document.getElementById('about-main')
 let projects = document.getElementById('projects-main')
 let contact = document.getElementById('contact-main')
 
-// displayPositions = () => {
-//   console.log("main", main.scrollTop, main.offsetHeight, main.scrollHeight)
-//   console.log("title", title.scrollTop, title.offsetHeight, title.scrollHeight)
-//   console.log("about", about.scrollTop, about.offsetHeight, about.scrollHeight)
-//   console.log("projects", projects.scrollTop, projects.offsetHeight, projects.scrollHeight)
-//   console.log("contact", contact.scrollTop, contact.offsetHeight, contact.scrollHeight)
-//   console.log(" ")
-// }
-
 scrolling = (position) => {
   switch (position) {
     case 'about':
